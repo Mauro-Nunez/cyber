@@ -11,6 +11,14 @@ import { Suscripciones } from "./screens/Suscripciones";
 import { Tracking } from "./screens/Tracking";
 import { Desarrollo } from "./screens/Desarrollo";
 import { Chatbot } from "./screens/Chatbot";
+import { Products } from "./screens/Products/Products";
+import { Services } from "./screens/Services/Services";
+import { Development } from "./screens/Development/Development";
+import { Diagnostico } from "./screens/Diagnostico/Diagnostico";
+import { Reparacion } from "./screens/Reparacion/Reparacion";
+import { Consultoria } from "./screens/Consultoria/Consultoria";
+import { Caracteristicas } from "./screens/Caracteristicas/Caracteristicas";
+import { Precios } from "./screens/Precios/Precios";
 import AdminPanel from "./screens/AdminPanel";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
@@ -27,6 +35,14 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/suscripciones" element={<Suscripciones />} />
         <Route path="/tracking" element={<Tracking />} />
         <Route path="/desarrollo" element={<Desarrollo />} />
+        <Route path="/productos" element={<Products />} />
+        <Route path="/servicios" element={<Services />} />
+        <Route path="/desarrollo" element={<Development />} />
+        <Route path="/diagnostico" element={<Diagnostico />} />
+        <Route path="/reparacion" element={<Reparacion />} />
+        <Route path="/consultoria" element={<Consultoria />} />
+        <Route path="/caracteristicas" element={<Caracteristicas />} />
+        <Route path="/precios" element={<Precios />} />
         <Route path="/admin" element={<AdminPanel />} />
       </Routes>
     </Router>
