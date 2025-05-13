@@ -16,39 +16,6 @@ const navItems = [
   { name: "DESARROLLO", path: "/desarrollo" }
 ];
 
-const pricingPlans = [
-  {
-    name: "GuazuBase",
-    price: "€10/mes",
-    features: [
-      "1 canal de comunicación",
-      "Mensajes ilimitados",
-      "Búsqueda básica",
-      "Integraciones básicas"
-    ]
-  },
-  {
-    name: "GuazuPlus",
-    price: "€15/mes",
-    features: [
-      "Todo lo de GuazuBase",
-      "3 canales de comunicación",
-      "CRM básico",
-      "Automatizaciones"
-    ]
-  },
-  {
-    name: "GuazuPro",
-    price: "€111/mes",
-    features: [
-      "Todo lo de GuazuPlus",
-      "Canales ilimitados",
-      "CRM avanzado",
-      "API personalizada"
-    ]
-  }
-];
-
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
@@ -157,32 +124,6 @@ export const Cyberlink = (): JSX.Element => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
             </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-24">
-            {pricingPlans.map((plan, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }}
-                className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300"
-              >
-                <h4 className="text-xl font-bold text-gray-900 mb-4">{plan.name}</h4>
-                <p className="text-3xl font-bold text-purple-600 mb-6">{plan.price}</p>
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-center space-x-3 text-gray-700">
-                      <span className="text-purple-600">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button className="w-full bg-purple-600 text-white py-3 rounded-full hover:bg-purple-700 transition-colors duration-300">
-                  Elegir Plan
-                </button>
-              </motion.div>
-            ))}
           </div>
         </div>
       </Section>
