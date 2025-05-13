@@ -94,7 +94,7 @@ export const Cyberlink = (): JSX.Element => {
                   "Gestión centralizada de canales",
                   "Chatbots con IA",
                   "Integración multi-plataforma",
-                  "CRM avanzado",
+                  "CRM integrado",
                   "Automatización inteligente"
                 ].map((item, index) => (
                   <motion.li
@@ -124,54 +124,6 @@ export const Cyberlink = (): JSX.Element => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
             </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* CRM Section */}
-      <Section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="crm">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema CRM Avanzado</h2>
-          <p className="text-xl text-gray-600">Gestión integral de relaciones con clientes</p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-gray-900">Funcionalidades Principales</h3>
-            <ul className="space-y-4">
-              {[
-                "Gestión de contactos y leads",
-                "Pipeline de ventas personalizable",
-                "Automatización de marketing",
-                "Seguimiento de interacciones",
-                "Análisis y reportes avanzados",
-                "Integración con email y calendario"
-              ].map((item, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="flex items-center space-x-3 text-gray-700"
-                >
-                  <span className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">✓</span>
-                  <span>{item}</span>
-                </motion.li>
-              ))}
-            </ul>
-            <Link
-              to="/crm"
-              className="inline-block bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
-            >
-              Conocer Más
-            </Link>
-          </div>
-          <div className="relative">
-            <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
-              alt="Sistema CRM"
-              className="rounded-2xl shadow-2xl"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
           </div>
         </div>
       </Section>
