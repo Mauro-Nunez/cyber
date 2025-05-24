@@ -10,7 +10,7 @@ import { CRM } from "./screens/CRM/CRM";
 import { ERP } from "./screens/ERP/ERP";
 import { Turnos } from "./screens/Turnos/Turnos";
 import { Suscripciones } from "./screens/Suscripciones/Suscripciones";
-import { GestionFlota } from "./screens/GestionFlota/GestionFlota";
+import { GestionFlota } from "./screens/GestionFlota";
 import { Desarrollo } from "./screens/Desarrollo/Desarrollo";
 import { Chatbot } from "./screens/Chatbot/Chatbot";
 
