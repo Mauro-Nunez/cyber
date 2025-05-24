@@ -77,5 +77,6 @@ export const Cyberlink = (): JSX.Element => {
           </motion.button>
         </div>
       </Section>
-
-[Content continues exactly as in the original file from this point forward, including all sections (Chatbot, GuazuApp, ERP, Appointment Management, Subscription Management, Tracking System, E-commerce Preview, Custom Development) and the footer, with no changes]
+    </div>
+  );
+};
