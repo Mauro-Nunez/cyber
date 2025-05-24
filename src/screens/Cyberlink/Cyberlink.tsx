@@ -7,7 +7,6 @@ import { Section } from "../../components/ui/Section";
 const navItems = [
   { name: "CHATBOT", path: "/chatbot" },
   { name: "GUAZUAPP", path: "/guazuapp" },
-  { name: "CRM", path: "/crm" },
   { name: "ERP", path: "/erp" },
   { name: "TURNOS", path: "/turnos" },
   { name: "SUSCRIPCIONES", path: "/suscripciones" },
