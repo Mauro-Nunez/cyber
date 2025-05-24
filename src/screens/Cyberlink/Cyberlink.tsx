@@ -557,14 +557,14 @@ export const Cyberlink = (): JSX.Element => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <h3 className="font-semibold mb-4">Store</h3>
+                <h3 className="font-semibold mb-4">Tienda</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-600 hover:text-gray-900">Productos</a></li>
                   <li><a href="#" className="text-gray-600 hover:text-gray-900">Servicios</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold mb-4">Repairs</h3>
+                <h3 className="font-semibold mb-4">Reparaciones</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-600 hover:text-gray-900">Diagnóstico</a></li>
                   <li><a href="#" className="text-gray-600 hover:text-gray-900">Reparación</a></li>
@@ -587,7 +587,7 @@ export const Cyberlink = (): JSX.Element => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
-            <p className="text-gray-600 mb-4 md:mb-0">©2025 MisTec Capital, All rights reserved</p>
+            <p className="text-gray-600 mb-4 md:mb-0">©2025 MisTec Capital, Todos los derechos reservados</p>
             <div className="flex space-x-4">
               <a 
                 href="#" 
