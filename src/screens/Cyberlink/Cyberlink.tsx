@@ -565,12 +565,12 @@ export const Cyberlink = (): JSX.Element => {
                 Teléfono: 0376 438-2705
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-4">
               {navItems.map((item, index) => (
                 <Link
                   key={index}
                   to={item.path}
-                  className="text-gray-600 hover:text-gray-900"
+                  className="px-4 py-2 text-gray-600 hover:text-white bg-gray-100 hover:bg-purple-600 rounded-full transition-all duration-300 text-center text-sm font-medium transform hover:scale-105"
                 >
                   {item.name}
                 </Link>
