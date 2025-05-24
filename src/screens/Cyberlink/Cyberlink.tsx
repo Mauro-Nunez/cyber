@@ -12,6 +12,7 @@ const navItems = [
   { name: "TURNOS", path: "/turnos" },
   { name: "SUSCRIPCIONES", path: "/suscripciones" },
   { name: "GESTIÓN DE FLOTA", path: "/gestion-flota" },
+  { name: "GESTIÓN DE RESTAURANTE", path: "/gestion-restaurante" },
   { name: "E-COMMERCE", path: "/ecommerce" },
   { name: "DESARROLLO", path: "/desarrollo" }
 ];
