@@ -10,7 +10,7 @@ import { CRM } from "./screens/CRM/CRM";
 import { ERP } from "./screens/ERP/ERP";
 import { Turnos } from "./screens/Turnos/Turnos";
 import { Suscripciones } from "./screens/Suscripciones/Suscripciones";
-import { Tracking } from "./screens/Tracking/Tracking";
+import { GestionFlota } from "./screens/GestionFlota/GestionFlota";
 import { Desarrollo } from "./screens/Desarrollo/Desarrollo";
 import { Chatbot } from "./screens/Chatbot/Chatbot";
 
@@ -40,7 +40,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/erp" element={<ERP />} />
         <Route path="/turnos" element={<Turnos />} />
         <Route path="/suscripciones" element={<Suscripciones />} />
-        <Route path="/tracking" element={<Tracking />} />
+        <Route path="/gestion-flota" element={<GestionFlota />} />
         <Route path="/desarrollo" element={<Desarrollo />} />
         <Route path="/productos" element={<Products />} />
         <Route path="/servicios" element={<Services />} />
