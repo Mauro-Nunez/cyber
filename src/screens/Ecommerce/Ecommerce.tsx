@@ -12,7 +12,7 @@ export const Ecommerce = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg)] bg-cover bg-center bg-fixed">
+      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(/ecommerce-features.png)] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
           <motion.h1
@@ -131,7 +131,7 @@ export const Ecommerce = (): JSX.Element => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg"
+                src="/rename.png"
                 alt="Panel de Administración"
                 className="rounded-2xl shadow-2xl"
               />
@@ -146,7 +146,7 @@ export const Ecommerce = (): JSX.Element => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/5632395/pexels-photo-5632395.jpeg"
+              src="/ecommerce-features.png"
               alt="Experiencia Móvil"
               className="rounded-2xl shadow-2xl"
             />
@@ -182,7 +182,7 @@ export const Ecommerce = (): JSX.Element => {
       {/* Call to Action */}
       <Section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
         <div className="bg-purple-600 rounded-3xl p-16 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url(https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg)] bg-cover bg-center opacity-10"></div>
+          <div className="absolute inset-0 bg-[url(/ecommerce-features.png)] bg-cover bg-center opacity-10"></div>
           <div className="relative z-10">
             <h2 className="text-4xl font-bold mb-8">¿Listo para empezar a vender en línea?</h2>
             <p className="text-xl mb-12 max-w-2xl mx-auto">
