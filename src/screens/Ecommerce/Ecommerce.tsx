@@ -12,7 +12,7 @@ export const Ecommerce = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg)] bg-cover bg-center bg-fixed">
+      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/8473617/pexels-photo-8473617.jpeg)] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
           <motion.h1
