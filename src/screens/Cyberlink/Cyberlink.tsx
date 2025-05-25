@@ -372,7 +372,7 @@ export const Cyberlink = (): JSX.Element => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/7348711/pexels-photo-7348711.jpeg"
+                src="/flota.png"
                 alt="Sistema de Flotas"
                 className="rounded-2xl shadow-2xl"
               />
