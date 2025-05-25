@@ -3,11 +3,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Section } from "../../components/ui/Section";
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export const Chatbot = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg)] bg-cover bg-center bg-fixed">
+      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg)] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
           <motion.h1
@@ -62,7 +67,7 @@ export const Chatbot = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg"
+              src="https://images.pexels.com/photos/8438934/pexels-photo-8438934.jpeg"
               alt="Chatbot Features"
               className="rounded-2xl shadow-2xl"
             />
