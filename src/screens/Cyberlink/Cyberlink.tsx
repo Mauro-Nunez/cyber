@@ -195,7 +195,7 @@ export const Cyberlink = (): JSX.Element => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg"
+              src="/erp.png"
               alt="Sistema ERP"
               className="rounded-2xl shadow-2xl"
             />
