@@ -1,0 +1,3 @@
+<invoke name="saveImage">
+<parameter name="imageData">data:image/png;base64,...</parameter>
+</invoke>
