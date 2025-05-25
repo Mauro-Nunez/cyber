@@ -128,7 +128,7 @@ export const Cyberlink = (): JSX.Element => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/8386422/pexels-photo-8386422.jpeg"
+                src="/bot.png"
                 alt="Chatbot Features"
                 className="rounded-2xl shadow-2xl"
               />
