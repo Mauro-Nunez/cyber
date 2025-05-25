@@ -177,7 +177,7 @@ export const Cyberlink = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/7014766/pexels-photo-7014766.jpeg"
+              src="/guazu.png"
               alt="GuazuApp Dashboard"
               className="rounded-2xl shadow-2xl"
             />
