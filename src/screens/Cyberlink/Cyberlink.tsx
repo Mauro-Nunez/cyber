@@ -472,7 +472,7 @@ export const Cyberlink = (): JSX.Element => {
             </div>
             <div className="relative">
               <img
-                src="/ecommerce-features.png"
+                src="/rename.png"
                 alt="E-commerce Platform"
                 className="rounded-2xl shadow-2xl"
               />
