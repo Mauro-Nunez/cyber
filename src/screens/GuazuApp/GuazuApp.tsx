@@ -12,13 +12,14 @@ export const GuazuApp = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-screen bg-[#0B1121] flex items-center justify-center overflow-hidden">
+      <Section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="/guazuBack.png" 
-            alt="Background Pattern"
-            className="w-full h-full object-cover opacity-10"
+            src="https://images.pexels.com/photos/4549416/pexels-photo-4549416.jpeg"
+            alt="Call Center Background"
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative max-w-7xl w-full px-4 z-10">
           <motion.div
