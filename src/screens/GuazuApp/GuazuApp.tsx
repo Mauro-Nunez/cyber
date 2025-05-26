@@ -12,31 +12,36 @@ export const GuazuApp = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-screen bg-[#0B1121] flex items-center justify-center p-0">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="max-w-7xl w-full px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-white text-center mb-12"
-            >
-              <h1 className="text-6xl font-bold mb-6">GuazuApp</h1>
-              <p className="text-2xl text-gray-300">Sistema Multicanal de Chatbots y CRM</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="relative w-full max-w-5xl mx-auto"
-            >
-              <img 
-                src="/guazubanner.png" 
-                alt="GuazuApp Interface"
-                className="w-full rounded-lg shadow-2xl"
-              />
-            </motion.div>
-          </div>
+      <Section className="relative h-screen bg-[#0B1121] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/guazuBack.png" 
+            alt="Background Pattern"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="relative max-w-7xl w-full px-4 z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-white text-center mb-16"
+          >
+            <h1 className="text-7xl font-bold mb-6">GuazuApp</h1>
+            <p className="text-2xl text-gray-300">Sistema Multicanal de Chatbots y CRM</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="relative w-full max-w-5xl mx-auto"
+          >
+            <img 
+              src="/guazubanner.png" 
+              alt="GuazuApp Interface"
+              className="w-full rounded-xl shadow-2xl"
+            />
+          </motion.div>
         </div>
       </Section>
 
