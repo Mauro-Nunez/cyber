@@ -14,7 +14,7 @@ export const GuazuApp = (): JSX.Element => {
       {/* Hero Section */}
       <Section className="relative h-[70vh] flex items-center justify-center">
         <img 
-          src="/guazuapp.png" 
+          src="/guazuback.png" 
           alt="GuazuApp Hero" 
           className="w-full h-full object-cover"
         />
