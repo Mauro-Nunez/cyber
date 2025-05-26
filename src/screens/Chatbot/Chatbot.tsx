@@ -12,33 +12,19 @@ export const Chatbot = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(/chatbot-header.png)] bg-cover bg-center bg-fixed">
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-        <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-6xl font-bold leading-tight"
-          >
-            Sistema de Chatbot Inteligente
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl font-light"
-          >
-            Automatiza tu atención al cliente con IA avanzada
-          </motion.p>
-        </div>
+      <Section className="relative h-[70vh] flex items-center justify-center">
+        <img 
+          src="/fomdochat.png" 
+          alt="Chatbot Hero" 
+          className="w-full h-full object-cover"
+        />
       </Section>
 
       {/* Features Section */}
       <Section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Características Principales</h2>
-          <p className="text-xl text-gray-600">Potencia tu negocio con IA</p>
+          <p className="text-xl text-gray-600">Todo lo que necesitas para gestionar tus clientes</p>
         </div>
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
