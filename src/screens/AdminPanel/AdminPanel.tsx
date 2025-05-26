@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Section } from '../../components/ui/Section';
+import { Section } from '../../components/ui/Section/Section';
 
 const AdminPanel: React.FC = () => {
   return (
@@ -23,4 +23,4 @@ const AdminPanel: React.FC = () => {
   );
 };
 
-export default AdminPanel; 
+export default AdminPanel;
