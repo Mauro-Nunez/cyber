@@ -12,11 +12,11 @@ export const Chatbot = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center">
+      <Section className="relative h-[40vh] flex items-center justify-center">
         <img 
           src="/fomdochat.png" 
           alt="Chatbot Hero" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain max-h-[400px]"
         />
       </Section>
 
