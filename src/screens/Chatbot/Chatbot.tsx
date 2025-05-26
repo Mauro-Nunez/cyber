@@ -53,7 +53,7 @@ export const Chatbot = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/8438934/pexels-photo-8438934.jpeg"
+              src="/chatpag.png"
               alt="Chatbot Features"
               className="rounded-2xl shadow-2xl"
             />
