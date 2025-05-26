@@ -67,9 +67,9 @@ export const Turnos = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="/turno.png"
+              src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg"
               alt="Sistema de Turnos"
-              className="rounded-2xl shadow-2xl"
+              className="rounded-2xl shadow-2xl object-cover h-[500px] w-full"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
           </div>
