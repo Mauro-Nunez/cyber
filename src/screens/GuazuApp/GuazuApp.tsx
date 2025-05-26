@@ -21,7 +21,7 @@ export const GuazuApp = (): JSX.Element => {
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
-        <div className="relative max-w-7xl w-full px-4 z-10">
+        <div className="relative z-10 container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export const GuazuApp = (): JSX.Element => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="relative w-full max-w-5xl mx-auto"
+            className="max-w-5xl mx-auto"
           >
             <img 
               src="/guazubanner.png" 
