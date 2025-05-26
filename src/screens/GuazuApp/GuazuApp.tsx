@@ -15,28 +15,21 @@ export const GuazuApp = (): JSX.Element => {
       <Section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
-            src="https://images.pexels.com/photos/4549416/pexels-photo-4549416.jpeg"
+            src="https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg"
             alt="Call Center Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white text-center mb-8"
+            className="text-white text-center"
           >
-            <h1 className="text-7xl font-bold mb-6">GuazuApp</h1>
-            <p className="text-2xl text-gray-300">Sistema Multicanal de Chatbots y CRM</p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="max-w-5xl mx-auto"
-          >
+            <h1 className="text-6xl font-bold mb-4">GuazuApp</h1>
+            <p className="text-2xl text-gray-200">Sistema Multicanal de Chatbots y CRM</p>
           </motion.div>
         </div>
       </Section>
