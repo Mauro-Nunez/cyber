@@ -12,7 +12,7 @@ export const GuazuApp = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-screen flex items-center justify-center">
+      <Section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <img 
             src="https://images.pexels.com/photos/4549416/pexels-photo-4549416.jpeg"
@@ -26,7 +26,7 @@ export const GuazuApp = (): JSX.Element => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white text-center mb-16"
+            className="text-white text-center mb-8"
           >
             <h1 className="text-7xl font-bold mb-6">GuazuApp</h1>
             <p className="text-2xl text-gray-300">Sistema Multicanal de Chatbots y CRM</p>
@@ -37,7 +37,6 @@ export const GuazuApp = (): JSX.Element => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-5xl mx-auto"
           >
-
           </motion.div>
         </div>
       </Section>
