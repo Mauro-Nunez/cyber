@@ -12,7 +12,7 @@ export const Turnos = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg)] bg-cover bg-center bg-fixed">
+      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/3205570/pexels-photo-3205570.jpeg)] bg-cover bg-center bg-fixed">
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
           <motion.h1
@@ -67,7 +67,7 @@ export const Turnos = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+              src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg"
               alt="Sistema de Turnos"
               className="rounded-2xl shadow-2xl object-cover h-[500px] w-full"
             />
