@@ -1,6 +1,6 @@
 import React from 'react';
-import { Section } from '../../components/ui/Section/Section';
-import { SystemExplorer } from '../../components/dashboard/SystemExplorer/SystemExplorer';
+import { Section } from '../../components/ui/Section';
+import { SystemExplorer } from '../../components/dashboard/SystemExplorer';
 
 const Dashboard: React.FC = () => {
   return (
