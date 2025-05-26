@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Section } from "../../components/ui/Section/Section";
+import { Section } from "../../components/ui/Section";
 
 const navItems = [
   { name: "CHATBOT", path: "/chatbot" },

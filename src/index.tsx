@@ -25,10 +25,6 @@ import { Consultoria } from "./screens/Consultoria/Consultoria";
 import { Caracteristicas } from "./screens/Caracteristicas/Caracteristicas";
 import { Precios } from "./screens/Precios/Precios";
 
-// Admin and Dashboard
-import AdminPanel from "./screens/AdminPanel/AdminPanel";
-import { Dashboard } from "./screens/Dashboard/Dashboard";
-
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <Router>
@@ -52,8 +48,6 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/consultoria" element={<Consultoria />} />
         <Route path="/caracteristicas" element={<Caracteristicas />} />
         <Route path="/precios" element={<Precios />} />
-        <Route path="/admin" element={<AdminPanel />} />
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   </StrictMode>

@@ -10,7 +10,7 @@ const App: React.FC = () => {
         <Route path="/login" element={<LoginForm />} />
 
         {/* Fallback Route */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/\" replace />} />
       </Routes>
     </Router>
   );
