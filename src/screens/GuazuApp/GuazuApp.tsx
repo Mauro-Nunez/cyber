@@ -37,11 +37,7 @@ export const GuazuApp = (): JSX.Element => {
             transition={{ duration: 1, delay: 0.3 }}
             className="max-w-5xl mx-auto"
           >
-            <img 
-              src="/guazubanner.png" 
-              alt="GuazuApp Interface"
-              className="w-full rounded-xl shadow-2xl"
-            />
+
           </motion.div>
         </div>
       </Section>
