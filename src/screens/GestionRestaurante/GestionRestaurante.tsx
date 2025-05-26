@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Section } from "../../components/ui/Section/Section";
+import { Section } from "../../components/ui/Section";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
