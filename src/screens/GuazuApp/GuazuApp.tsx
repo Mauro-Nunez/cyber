@@ -12,11 +12,11 @@ export const GuazuApp = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-screen flex items-center justify-center">
+      <Section className="relative h-screen bg-[#0B1121] flex items-center justify-center">
         <img 
-          src="/guazuback.png" 
+          src="/guazuBack.png" 
           alt="GuazuApp Hero" 
-          className="absolute inset-0 w-full h-full object-contain bg-[#0B1121]"
+          className="w-full h-full object-cover"
         />
       </Section>
 
