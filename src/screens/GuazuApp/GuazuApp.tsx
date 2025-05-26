@@ -12,26 +12,12 @@ export const GuazuApp = (): JSX.Element => {
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       {/* Hero Section */}
-      <Section className="relative h-[70vh] flex items-center justify-center bg-[url(https://images.pexels.com/photos/7014766/pexels-photo-7014766.jpeg)] bg-cover bg-center bg-fixed">
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-        <div className="relative text-center text-white space-y-6 max-w-4xl mx-auto px-4">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-6xl font-bold leading-tight"
-          >
-            GuazuApp
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl font-light"
-          >
-            Sistema Multicanal de Chatbots y CRM
-          </motion.p>
-        </div>
+      <Section className="relative h-[70vh] flex items-center justify-center">
+        <img 
+          src="/guazuapp.png" 
+          alt="GuazuApp Hero" 
+          className="w-full h-full object-cover"
+        />
       </Section>
 
       {/* Features Section */}
