@@ -67,7 +67,7 @@ export const Turnos = (): JSX.Element => {
           </div>
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg"
+              src="/turno.png"
               alt="Sistema de Turnos"
               className="rounded-2xl shadow-2xl"
             />
@@ -116,8 +116,9 @@ export const Turnos = (): JSX.Element => {
             ].map((section, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                initial="hidden"
+                animate="visible"
+                variants={fadeInUp}
                 transition={{ delay: index * 0.2 }}
                 className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300"
               >
