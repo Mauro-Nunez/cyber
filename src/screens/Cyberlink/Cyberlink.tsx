@@ -234,6 +234,56 @@ export const Cyberlink = (): JSX.Element => {
         </div>
       </Section>
 
+      {/* HR System Section */}
+      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="rrhh">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema de Recursos Humanos</h2>
+            <p className="text-xl text-gray-600">Gestión integral del capital humano</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h3 className="text-2xl font-bold text-gray-900">Funcionalidades Principales</h3>
+              <ul className="space-y-4">
+                {[
+                  "Gestión de personal",
+                  "Reclutamiento y selección",
+                  "Evaluación de desempeño",
+                  "Control de asistencia",
+                  "Gestión de nómina",
+                  "Capacitación y desarrollo"
+                ].map((item, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center space-x-3 text-gray-700"
+                  >
+                    <span className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">✓</span>
+                    <span>{item}</span>
+                  </motion.li>
+                ))}
+              </ul>
+              <Link
+                to="/rrhh"
+                className="inline-block bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
+              >
+                Conocer Más
+              </Link>
+            </div>
+            <div className="relative">
+              <img
+                src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg"
+                alt="Sistema RRHH"
+                className="rounded-2xl shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Appointment Management System */}
       <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="turnos">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
