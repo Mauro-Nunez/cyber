@@ -8,6 +8,7 @@ import { Ecommerce } from "./screens/Ecommerce/Ecommerce";
 import { GuazuApp } from "./screens/GuazuApp/GuazuApp";
 import { CRM } from "./screens/CRM/CRM";
 import { ERP } from "./screens/ERP/ERP";
+import { RRHH } from "./screens/RRHH/RRHH";
 import { Turnos } from "./screens/Turnos/Turnos";
 import { Suscripciones } from "./screens/Suscripciones/Suscripciones";
 import { GestionFlota } from "./screens/GestionFlota";
@@ -35,6 +36,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
         <Route path="/guazuapp" element={<GuazuApp />} />
         <Route path="/crm" element={<CRM />} />
         <Route path="/erp" element={<ERP />} />
+        <Route path="/rrhh" element={<RRHH />} />
         <Route path="/turnos" element={<Turnos />} />
         <Route path="/suscripciones" element={<Suscripciones />} />
         <Route path="/gestion-flota" element={<GestionFlota />} />
