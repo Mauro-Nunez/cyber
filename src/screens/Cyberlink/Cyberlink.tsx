@@ -24,7 +24,7 @@ const fadeInUp = {
 
 export const Cyberlink = (): JSX.Element => {
   const scrollToProducts = () => {
-    const productsSection = document.getElementById('productos');
+    const productsSection = document.getElementById('chatbot-section');
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -103,7 +103,7 @@ export const Cyberlink = (): JSX.Element => {
       </Section>
 
       {/* Chatbot Section */}
-      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="productos">
+      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="chatbot-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema de Chatbot Inteligente</h2>
