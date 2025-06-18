@@ -24,7 +24,7 @@ const fadeInUp = {
 
 export const Cyberlink = (): JSX.Element => {
   const scrollToProducts = () => {
-    const productsSection = document.getElementById('chatbot-section');
+    const productsSection = document.getElementById('productos-section');
     if (productsSection) {
       productsSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -103,54 +103,56 @@ export const Cyberlink = (): JSX.Element => {
       </Section>
 
       {/* Chatbot Section */}
-      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="chatbot-section">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema de Chatbot Inteligente</h2>
-            <p className="text-xl text-gray-600">Automatiza tu atención al cliente con IA avanzada</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-gray-900">Características Avanzadas</h3>
-              <ul className="space-y-4">
-                {[
-                  "Procesamiento de lenguaje natural",
-                  "Aprendizaje automático continuo",
-                  "Integración con múltiples plataformas",
-                  "Personalización avanzada",
-                  "Análisis de sentimientos",
-                  "Reportes detallados"
-                ].map((item, index) => (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-center space-x-3 text-gray-700"
-                  >
-                    <span className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">✓</span>
-                    <span>{item}</span>
-                  </motion.li>
-                ))}
-              </ul>
-              <Link
-                to="/chatbot"
-                className="inline-block bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
-              >
-                Conocer Más
-              </Link>
+      <div id="productos-section">
+        <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema de Chatbot Inteligente</h2>
+              <p className="text-xl text-gray-600">Automatiza tu atención al cliente con IA avanzada</p>
             </div>
-            <div className="relative">
-              <img
-                src="/bot.png"
-                alt="Chatbot Features"
-                className="rounded-2xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="space-y-8">
+                <h3 className="text-2xl font-bold text-gray-900">Características Avanzadas</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Procesamiento de lenguaje natural",
+                    "Aprendizaje automático continuo",
+                    "Integración con múltiples plataformas",
+                    "Personalización avanzada",
+                    "Análisis de sentimientos",
+                    "Reportes detallados"
+                  ].map((item, index) => (
+                    <motion.li
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex items-center space-x-3 text-gray-700"
+                    >
+                      <span className="h-6 w-6 flex items-center justify-center rounded-full bg-purple-100 text-purple-600">✓</span>
+                      <span>{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
+                <Link
+                  to="/chatbot"
+                  className="inline-block bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
+                >
+                  Conocer Más
+                </Link>
+              </div>
+              <div className="relative">
+                <img
+                  src="/bot.png"
+                  alt="Chatbot Features"
+                  className="rounded-2xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-transparent rounded-2xl"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </Section>
+        </Section>
+      </div>
 
       {/* GuazuApp Section */}
       <Section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="guazuapp">
