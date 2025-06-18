@@ -8,6 +8,7 @@ const navItems = [
   { name: "CHATBOT", path: "/chatbot" },
   { name: "GUAZUAPP", path: "/guazuapp" },
   { name: "ERP", path: "/erp" },
+  { name: "RRHH", path: "/rrhh" },
   { name: "TURNOS", path: "/turnos" },
   { name: "SUSCRIPCIONES", path: "/suscripciones" },
   { name: "FLOTAS", path: "/gestion-flota" },
@@ -22,6 +23,17 @@ const fadeInUp = {
 };
 
 export const Cyberlink = (): JSX.Element => {
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById('productos');
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleStoreRedirect = () => {
+    window.open('https://tienda.cyberlink.com.ar', '_blank');
+  };
+
   return (
     <div className="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
@@ -72,6 +84,7 @@ export const Cyberlink = (): JSX.Element => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
+              onClick={scrollToProducts}
               className="bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
             >
               Comenzar Ahora
@@ -80,16 +93,17 @@ export const Cyberlink = (): JSX.Element => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
+              onClick={handleStoreRedirect}
               className="bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
-              <Link to="/productos">Ir a la Tienda</Link>
+              Ir a la Tienda
             </motion.button>
           </div>
         </div>
       </Section>
 
       {/* Chatbot Section */}
-      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50">
+      <Section className="py-24 bg-gradient-to-br from-purple-50 to-indigo-50" id="productos">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Sistema de Chatbot Inteligente</h2>
