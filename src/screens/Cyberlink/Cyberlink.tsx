@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Section } from "../../components/ui/Section";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
-const navItems = [
+const mainNavItems = [
   { name: "CHATBOT", path: "/chatbot" },
   { name: "GUAZUAPP", path: "/guazuapp" },
+  { name: "DESARROLLOS A MEDIDA", path: "/desarrollo" }
+];
+
+const otherProducts = [
   { name: "ERP", path: "/erp" },
   { name: "RRHH", path: "/rrhh" },
   { name: "TURNOS", path: "/turnos" },
@@ -14,7 +19,7 @@ const navItems = [
   { name: "FLOTAS", path: "/gestion-flota" },
   { name: "RESTAURANTES", path: "/gestion-restaurante" },
   { name: "E-COMMERCE", path: "/ecommerce" },
-  { name: "DESARROLLO", path: "/desarrollo" }
+  { name: "CRM", path: "/crm" }
 ];
 
 const fadeInUp = {
@@ -23,6 +28,8 @@ const fadeInUp = {
 };
 
 export const Cyberlink = (): JSX.Element => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const scrollToProducts = () => {
     const productsSection = document.getElementById('productos-section');
     if (productsSection) {
@@ -44,8 +51,8 @@ export const Cyberlink = (): JSX.Element => {
               alt="Logocyber"
               src="/logocyber-1.png"
             />
-            <div className="hidden md:flex space-x-8">
-              {navItems.map((item, index) => (
+            <div className="hidden md:flex space-x-8 items-center">
+              {mainNavItems.map((item, index) => (
                 <Link
                   key={index}
                   to={item.path}
@@ -54,6 +61,36 @@ export const Cyberlink = (): JSX.Element => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Dropdown for Other Products */}
+              <div className="relative">
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  className="flex items-center text-gray-800 hover:text-purple-600 transition-colors duration-200 font-medium"
+                >
+                  OTROS PRODUCTOS
+                  <ChevronDownIcon 
+                    className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                      isDropdownOpen ? 'rotate-180' : ''
+                    }`} 
+                  />
+                </button>
+                
+                {isDropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                    {otherProducts.map((product, index) => (
+                      <Link
+                        key={index}
+                        to={product.path}
+                        className="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-600 transition-colors duration-200"
+                        onClick={() => setIsDropdownOpen(false)}
+                      >
+                        {product.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -632,7 +669,7 @@ export const Cyberlink = (): JSX.Element => {
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
-              {navItems.map((item, index) => (
+              {[...mainNavItems, ...otherProducts].map((item, index) => (
                 <Link
                   key={index}
                   to={item.path}
